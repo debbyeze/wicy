@@ -1,0 +1,163 @@
+@import "/utility.css";
+
+main{
+position: relative;
+}
+/* hero */
+.hero {
+  min-height: 85vh;
+}
+.hero-text {
+  padding: 0px 40px;
+  font-size: medium;
+  margin-top: 10vh;
+}
+.hero-text > h2 {
+margin-left: 4rem;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+.hero > img {
+  display: block;
+  height: 100%;
+}
+aside>h2{
+margin-top: 2vh;
+}
+aside>ul>li{
+cursor: pointer;
+}
+/* amplify */
+.amplify{
+display: grid;
+ grid: auto/auto;
+ grid-gap:25px;
+ margin-top: 8vh;
+ margin-bottom: 8vh;
+ margin-right: 4rem;
+
+}
+.amplify>article{
+background: #FFFFFF;
+box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+padding: 4rem 5rem;
+}
+article>.head{
+align-items: center;
+margin-bottom: 8vh;
+}
+article>.head>h3{
+font-weight: normal;
+}
+
+
+/* media query for 1200max */
+@media screen and (max-width: 1200px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    margin-right: 50px;
+  }
+  header > p {
+    margin-left: auto;
+  }
+  nav > ul > li {
+    font-size: 13px;
+  }
+  .hero > img {
+    width: 60%;
+    flex: 1;
+    border-radius: 0%;
+  }
+ 
+  
+}
+
+
+
+/* media query for 900max */
+@media screen and (max-width: 900px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    margin: auto;
+  }
+  nav {
+    display: none;
+  }
+  .close {
+    display: block;
+    margin-right: 15px;
+  }
+  nav ul {
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 4;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    right: 0;
+    padding-top: 30px;
+    overflow-y: visible;
+  }
+  nav ul > li {
+    padding-right: 0;
+    border-right: 0;
+    margin-bottom: 10vh;
+    font-size: medium;
+  }
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+
+  .navbar a:hover {
+    color: rgb(114, 210, 235);
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  .hero {
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    padding-bottom: 8vh;
+  }
+  .hero-text{
+    min-width: 200px;
+    font-size: medium;
+  }
+  .hero > img {
+    height: 37vh;
+    width: 100%;
+  }
+  .grid-container{
+  flex-direction: column;
+  }
+  aside{
+  margin-bottom: 2vh;
+  text-align: center;
+  }
+   aside>ul{
+ display: grid;
+ font-size: small;
+ grid:auto/ auto auto auto;
+grid-gap:7px;
+  }
+  .amplify{
+  margin-right: 2rem;
+  }
+  .amplify>article{
+  padding: 4rem 2rem;
+  }
+
+  
+}

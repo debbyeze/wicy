@@ -1,0 +1,161 @@
+@import "/utility.css";
+
+main{
+position: relative;
+}
+/* hero */
+.hero {
+  height: 70vh;
+}
+.hero-text {
+  color: #ffffff;
+  font-size: medium;
+  max-width: 650px;
+  padding: 10vh 3rem;
+  padding-bottom: 3vh;
+}
+.hero-text > h2 {
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+/* lap */
+.lap-container {
+  height: 45vh;
+  
+}
+.lap {
+  position: absolute;
+  left: 1%;
+  top: 60vh;
+  transform: (-50%, -50%);
+  animation: slideUp 1.5s ease-in;
+}
+@keyframes slideUp {
+  0% {
+    top: 3%;
+  }
+  
+  100% {
+    top: 30%;
+  }
+}
+.lap-head{
+margin-bottom: 5vh;
+justify-content: space-between;
+}
+.lap-head > h3 {
+  font-weight: normal;
+}
+.lap > div {
+  max-width: 1200px;
+  margin: 0px 5vw;
+  padding: 55px;
+  background-color: #ffffff;
+  color: #4f1059;
+}
+
+
+
+
+/* media query for 1200max */
+@media screen and (max-width: 1200px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    margin-right: 50px;
+  }
+  header > p {
+    margin-left: auto;
+  }
+  nav > ul > li {
+    font-size: 13px;
+  }
+  
+  
+}
+
+
+/* media query for 900max */
+@media screen and (max-width: 900px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    margin: auto;
+  }
+  nav {
+    display: none;
+  }
+  .close {
+    display: block;
+    margin-right: 15px;
+  }
+  nav ul {
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 4;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    right: 0;
+    padding-top: 30px;
+    overflow-y: visible;
+  }
+  nav ul > li {
+    padding-right: 0;
+    border-right: 0;
+    margin-bottom: 10vh;
+    font-size: medium;
+  }
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 0px;
+  }
+
+  .navbar a:hover {
+    color: rgb(114, 210, 235);
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  .hero {
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    padding-bottom: 8vh;
+  }
+  .hero-text {
+    font-size: medium;
+  }
+  .lap-container {
+    min-height: 70vh;
+  }
+  .lap {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .grid-container{
+  flex-direction: column;
+  }
+  aside{
+  margin-bottom: 2vh;
+  text-align: center;
+  }
+    aside>ul{
+ display: grid;
+ font-size: small;
+ grid:auto/ auto auto auto;
+grid-gap:7px;
+  
+  }
+  
+}
