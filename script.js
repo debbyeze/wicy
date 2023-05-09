@@ -1,5 +1,6 @@
- $(document).ready(function(){
-  $("button").click(function(){
-    $("this").css("color", "black");
-  });
-  });
+$(document).ready(function () {
+    $("section").keydown(function () {
+     $(this).fadeIn("slow"); 
+    
+    });
+});

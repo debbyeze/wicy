@@ -15,9 +15,10 @@ body {
   font-family: "Work Sans";
   margin: 0;
   padding: 0;
-  position: relative;
+  /* position: relative; */
   scroll-behavior: smooth;
   background-color: #e5e5e5;
+  line-height: 1cm;
 }
 
 body > div > a {
@@ -85,7 +86,7 @@ nav ul li {
 }
 aside{
 flex: 1;
-padding:20px 1rem;
+padding:2%;
 line-height: 1cm;
 margin-right: 1vw;
 }
@@ -156,8 +157,7 @@ button {
   display: block;
   padding: 15px 20px;
   border-radius: 5px;
-  margin-left: 10vw;
-  margin-top: 8vh;
+  margin-top: 4vh;
   border: none;
 }
 button:hover{
@@ -170,18 +170,24 @@ opacity: 0.9;
 
 /* footer */
 .footer-container {
-  padding: 5vh 6vw;
+  padding: 4%;
   justify-content:baseline;
   border-bottom: 1px solid #ffffff;
 }
  
 .footer-container > ul > li {
-  margin: 10px 0;
+  margin: 5px 0;
+  list-style: none;
 }
 .footer-container > ul > li > a {
   color: #ffffff;
 }
-
+.footer-container>div>h4, .footer-container>ul>h4{
+margin-bottom: 15px !important;
+}
+.footer-container>div, .footer-container>ul{
+margin: 0 2%;
+}
 .footer-icons > a {
   margin: 6px;
 }
@@ -191,7 +197,7 @@ opacity: 0.9;
 }
 footer > .copyright {
   padding: 5vh;
-  text-align: right;
+  text-align: center;
 }
 
 
@@ -201,6 +207,7 @@ footer > .copyright {
 @media screen and (max-width: 900px){
 .footer-container{
 flex-direction: column;
+
 }
 .footer-container>div, .footer-container>ul{
 flex: 1;

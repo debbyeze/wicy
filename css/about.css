@@ -2,29 +2,28 @@
 
 main{
 position: relative;
+/* background-color: #ffffff; */
 }
 /* hero */
 .hero {
   height: 85vh;
+  position: relative;
+  margin-bottom: 25%;
 }
 .hero-text {
   color: #ffffff;
-  padding: 0px 40px;
-  font-size: medium;
-  margin-top: 10vh;
+  padding: 6%;
+  font-size: large;
+  line-height: 1cm;
+  margin-top: 3%;
 }
 .hero-text > h3 {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .hero > img {
   display: block;
 }
 /* lap */
-.lap-container {
-  height: 60vh;
-  
-}
 .lap {
   position: absolute;
   right: 2%;
@@ -51,38 +50,41 @@ justify-content: space-between;
 .lap > div {
   flex: 1;
   margin: 0px 3vw;
-  padding: 55px;
+  padding: 6%;
   background-color: #ffffff;
   color: #4f1059;
 }
-.lap>div>button{
-margin-left: 0vw;
-}
+
 /* wicys story */
+.wicys-story{
+  padding: 6%;
+}
 .wicys-story>h3{
-margin-bottom: 5vh;
-margin-left: 5em;
+margin-bottom: 7vh;
+text-align: center;
 font-weight: 600;
+font-size: larger;
 }
 .card-text{
-margin-bottom: 3rem;
+margin-bottom: 2rem;
 }
-.card-text>h3{
-margin-bottom: 6px;
+.story-head{
+line-height: 0.7cm;
 }
 .slider-indicators>button{
 width: 15px;
 height: 15px;
 margin: 10px;
 border-radius: 50%;
-
+background-color: purple;
 }
+
 .card-container>.card>.card-text{
-padding-left: 3rem;
-max-width: 400px;
+padding-left: 6%;
+max-width: 500px;
 }
 .card-container>.card>.card-text>p{
-margin-top: 2vh;
+margin-top: 15px;
 }
 .card-text>h3{
 font-weight: normal;
@@ -91,14 +93,15 @@ font-weight: normal;
 
 /* photo */
 .photo{
-margin: 5vh 0;
-margin-top: 15vh;
+padding: 6%;
+margin: 2vh 3vw;
 max-width: 1000px;
 overflow: hidden;
 }
 .photo>h3{
 margin-bottom: 5vh;
-margin-left: 5em;
+text-align: center;
+font-size: larger;
 }
 .gallery{
 animation: trans 15s linear infinite;
@@ -126,7 +129,7 @@ animation: trans 15s linear infinite;
 }
 .picSlide:hover{
 animation-duration: 40s;
-transform: scale(1.6);
+transform: scale(1.2);
 }
 .photo>.gallery>img{
 display: block;
@@ -159,9 +162,9 @@ height: 50vh;
     flex: 1;
     border-radius: 0%;
   }
-  .hero-text{
+  /* .hero-text{
   text-align: center;
-  }
+  } */
   .card-flex > img {
     width: 60%;
   }
@@ -185,22 +188,26 @@ height: 50vh;
     display: block;
     margin-right: 15px;
   }
-  nav ul {
-    flex-direction: column;
+  nav {
+    display: none;
     background-color: #ffffff;
     z-index: 4;
-    align-items: center;
     position: fixed;
     height: 100%;
-    width: 200px;
+    width: 50%;
     right: 0;
-    padding-top: 30px;
-    overflow-y: visible;
+    top:0;
+    padding: 6%;
+    overflow-y:scroll;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
   nav ul > li {
     padding-right: 0;
     border-right: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 15%;
     font-size: medium;
   }
   .navbar {
@@ -216,30 +223,8 @@ height: 50vh;
     cursor: pointer;
     margin-right: 15px;
   }
-  .hero {
-    flex-direction: row-reverse;
-    flex-direction: column-reverse;
-    padding-bottom: 8vh;
-    height: 100vh;
-  }
-  .hero-text {
-    min-width: 200px;
-    font-size: medium;
-  }
-  .hero > img {
-    height: 42vh;
-    width: 100%;
-  }
-  .lap-container {
-    min-height: 135vh;
-  }
-  .lap {
-    top: 95vh;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .lap > .leadership {
-    margin-bottom: 30px;
+  .hero{
+  margin-bottom: 50%;
   }
   .grid-container{
   flex-direction: column;
@@ -254,6 +239,7 @@ height: 50vh;
  grid:auto/ auto auto auto;
 grid-gap:7px;
   }
+  
   .card{
   flex-direction: column;
   justify-content:space-between ;
@@ -269,6 +255,39 @@ grid-gap:7px;
   
   .photo>.gallery>img{
   height: 35vh;
-  width: 50vw;
+  width: 30%;
+  }
+}
+
+
+
+/* media query for 600max */
+@media screen and (max-width: 600px) {
+.hero {
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+  margin-bottom: 120%;
+    height: 100vh;
+  }
+  .hero-text {
+    min-width: 200px;
+    font-size: medium;
+    text-align: center;
+  }
+  .hero > img {
+    height: 42vh;
+    width: 100%;
+  }
+ .lap {
+    top: 98vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .lap > .leadership {
+    margin-bottom: 30px;
+  }
+  .photo>.gallery>img{
+  height: 25vh;
+  width: 50%;
   }
 }

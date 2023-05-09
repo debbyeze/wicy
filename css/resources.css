@@ -7,27 +7,24 @@ position: relative;
 .hero {
   height: 85vh;
   justify-content: center;
+  margin-bottom: 50%;
 }
 .hero-text {
 flex: 1;
   color: #ffffff;
-  padding: 0px 40px;
+  padding: 6%;
   font-size: medium;
-  margin-top: 10vh;
+  margin-top: 3%;
 }
 .hero-text > h3 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .hero > img {
 flex: 1;
   display: block;
-  width: 100%;
+  width: 50%;
 }
 /* lap */
-.lap-container {
-  height: 110vh;
-  
-}
 .lap {
   position: absolute;
   left: -1%;
@@ -54,21 +51,21 @@ justify-content: space-between;
 .lap-head > h3 {
   font-weight: normal;
   text-align: center;
-  padding-top: 6vh;
+  padding-top: 10px;
 }
 .lap > div {
-  padding: 3rem;
+  padding: 6%;
   max-width: 500px;
   background-color: #ffffff;
 }
 /* build-resource */
 .build-resource{
-padding: 1rem 4rem;
+padding: 6%;
 }
 .build-resource>h3{
 font-weight: normal;
-margin-bottom: 3vh;
-margin-left: 2rem;
+text-align: center;
+margin-bottom: 15px;
 }
 
 
@@ -94,14 +91,13 @@ margin-left: 2rem;
   }
   .hero{
     height: 95vh;
+    margin-bottom: 75%;
   }
   .hero > img {
     width: 60%;
+    height: 70vh;
     flex: 1;
     border-radius: 0%;
-  }
-  .lap-container{
-  height: 140vh;
   }
   .lap{
     top:90vh;
@@ -110,8 +106,8 @@ margin-left: 2rem;
   
 }
 
-/* media query for 900max */
-@media screen and (max-width: 900px) {
+/* media query for 950max */
+@media screen and (max-width: 950px) {
   html,
   body {
     padding: 0;
@@ -127,22 +123,26 @@ margin-left: 2rem;
     display: block;
     margin-right: 15px;
   }
-  nav ul {
-    flex-direction: column;
+  nav {
+    display: none;
     background-color: #ffffff;
     z-index: 4;
-    align-items: center;
     position: fixed;
     height: 100%;
-    width: 200px;
+    width: 50%;
     right: 0;
-    padding-top: 30px;
-    overflow-y: visible;
+    top:0;
+    padding: 6%;
+    overflow-y:scroll;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
   nav ul > li {
     padding-right: 0;
     border-right: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 15%;
     font-size: medium;
   }
   .navbar {
@@ -158,27 +158,12 @@ margin-left: 2rem;
     cursor: pointer;
     margin-right: 15px;
   }
-  .hero {
-    flex-direction: row-reverse;
-    flex-direction: column-reverse;
-    padding-bottom: 8vh;
-    height: 120vh;
-  }
-  .hero-text {
-    min-width: 200px;
-    font-size: medium;
-  }
-  .hero > img {
-    height: 42vh;
-    width: 85vw;
-  }
-  .lap-container {
-    height: 210vh;
+  .hero{
+   margin-bottom: 80%;
   }
   .lap {
-    top: 115vh;
-    display: grid;
- grid:auto/ auto;
+    top: 84vh;
+    
   }
   .grid-container{
   flex-direction: column;
@@ -196,8 +181,37 @@ grid-gap:7px;
   }
   .build-resource{
 margin-top: 5vh;
-padding: 1rem 2rem;
+padding: 6%;
   }
  
   
+}
+
+
+/* media query for 700max */
+@media screen and (max-width: 700px) {
+.hero {
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    padding-bottom: 8vh;
+    height: 120vh;
+    margin-bottom: 205%;
+  }
+  .hero-text {
+    min-width: 200px;
+    font-size: medium;
+  }
+  .hero > img {
+    height: 42vh;
+    width: 85vw;
+  }
+
+  .lap {
+    top: 100vh;
+    display: grid;
+ grid:auto/ auto;
+  }
+.lap>div{
+max-width: 700px;
+}
 }

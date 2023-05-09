@@ -5,15 +5,17 @@
   height: 85vh;
   background-image: linear-gradient(to right, #68a1c1 50%, #e5e5e5 50%);
   position: relative;
+  margin-bottom: 30%;
+
 }
 .hero-text {
   color: #ffffff;
-  padding: 0px 40px;
+  padding: 6%;
   font-size: large;
+  line-height: 1cm;
 }
 .hero-text > h1 {
-  margin-left: 8vw;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .hero-text > button {
   background-color: #ffffff;
@@ -25,9 +27,9 @@
   display: block;
 }
 /* lap */
-.lap-container {
+/* .lap-container {
   height: 65vh;
-}
+} */
 .lap {
   position: absolute;
   right: 5%;
@@ -47,33 +49,29 @@
 .lap > div {
   flex: 1;
   margin: 0px 3vw;
-  padding: 55px;
+  padding: 6%;
   background-color: #ffffff;
 }
 .lap > div > h3 {
-  margin-bottom: 40px;
-  margin-left: 40px;
+  margin-bottom: 15px;
 }
 /* card-flex */
 .card-flex {
-  min-height: 60vh;
+  height: 70vh;
   margin: 0 3vw;
 }
 .card-flex > img {
   display: block;
   flex: 1;
   height: 100%;
+  width: 100%;
 }
 .card-text {
   flex: 1;
-  padding: 0 1em;
-}
-.card-text > p {
-  margin: 10px 0;
+  padding: 6%;
 }
 .card-text > h2 {
-  margin-bottom: 5vh;
-  margin-left: 2em;
+  margin-bottom: 15px;
 }
 /* special thanks */
 .special-thanks {
@@ -81,7 +79,7 @@
 }
 .special-thanks > img {
   width: 100%;
-  height: 65vh;
+  height: auto;
 }
 /* login-form */
 .main-form{
@@ -128,6 +126,10 @@ background-color: #C4C4C4 !important;
   nav > ul > li {
     font-size: 13px;
   }
+  .hero{
+    margin-bottom: 40%;
+
+  }
   .hero > img {
     width: 60%;
     flex: 1;
@@ -139,8 +141,8 @@ background-color: #C4C4C4 !important;
 
 
 
-/* media query for 900max */
-@media screen and (max-width: 900px) {
+/* media query for 800max */
+@media screen and (max-width: 800px) {
   html,
   body {
     padding: 0;
@@ -151,6 +153,15 @@ background-color: #C4C4C4 !important;
   }
   nav {
     display: none;
+    background-color: #ffffff;
+    z-index: 4;
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top:0;
+    padding: 6%;
+    overflow-y:scroll;
   }
   .close {
     display: block;
@@ -158,21 +169,12 @@ background-color: #C4C4C4 !important;
   }
   nav ul {
     flex-direction: column;
-    background-color: #ffffff;
-    z-index: 4;
     align-items: center;
-    position: fixed;
-    height: auto;
-    width: 200px;
-    right: 0;
-    padding-top: 30px;
-    overflow-y:scroll;
-
   }
   nav ul > li {
     padding-right: 0;
     border-right: 0;
-    margin-bottom: 10vh;
+    margin-bottom: 15%;
     font-size: medium;
   }
   .navbar {
@@ -193,10 +195,10 @@ background-color: #C4C4C4 !important;
     flex-direction: column-reverse;
     background-color: #68a1c1;
     background-image: none;
-    padding-bottom: 8vh;
+  margin-bottom: 70%;
   }
   .hero-text > p {
-    max-width: 400px;
+    max-width: 500px;
     font-size: medium;
   }
   .hero > img {
@@ -214,17 +216,11 @@ background-color: #C4C4C4 !important;
   .lap > .who-we-are {
     margin-bottom: 30px;
   }
-  .card-flex {
-    flex-direction: column;
-    height: auto;
-  }
+
   .card-flex > img {
-    height: 30vh;
-    width: 100%;
+    width: 50%;
   }
-  .card-text {
-    padding: 5vh 4vw;
-  }
+  
   input[type=email], input[type=password], input[type=text], input[type=tel],input[type=url], select {
   width: 80%;
   }
@@ -234,5 +230,26 @@ background-color: #C4C4C4 !important;
   .top-list>ul>li{
   font-size: smaller;
   margin: 0 1em;
+  }
+}
+
+
+
+
+
+/* media query for 600max */
+@media screen and (max-width: 600px) {
+ .hero{
+ margin-bottom: 110%;
+ 
+ }
+ .card-flex {
+    flex-direction: column;
+    height: auto;
+
+  }
+  .card-flex > img {
+    height: 20vh;
+    width: 100%;
   }
 }
