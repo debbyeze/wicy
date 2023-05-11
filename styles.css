@@ -2,10 +2,10 @@
 
 /* hero */
 .hero {
-  height: 85vh;
+  height: auto;
   background-image: linear-gradient(to right, #68a1c1 50%, #e5e5e5 50%);
   position: relative;
-  margin-bottom: 30%;
+  margin-bottom: 78vh;
 
 }
 .hero-text {
@@ -16,6 +16,7 @@
 }
 .hero-text > h1 {
   margin-bottom: 10px;
+  font-size: xx-large;
 }
 .hero-text > button {
   background-color: #ffffff;
@@ -25,14 +26,12 @@
 }
 .hero > img {
   display: block;
+  height: auto;
 }
 /* lap */
-/* .lap-container {
-  height: 65vh;
-} */
 .lap {
   position: absolute;
-  right: 5%;
+  right: 1%;
   top: 89vh;
   transform: (-50%, -50%);
   animation: slideUp 1.5s ease-in;
@@ -43,7 +42,7 @@
   }
   
   100% {
-    top: 20%;
+    top: 50%;
   }
 }
 .lap > div {
@@ -51,20 +50,22 @@
   margin: 0px 3vw;
   padding: 6%;
   background-color: #ffffff;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+
 }
 .lap > div > h3 {
   margin-bottom: 15px;
 }
 /* card-flex */
 .card-flex {
-  height: 70vh;
+  min-height: 50vh;
   margin: 0 3vw;
 }
 .card-flex > img {
   display: block;
   flex: 1;
-  height: 100%;
-  width: 100%;
+  min-height: 50vh;
+  width: 50vw;
 }
 .card-text {
   flex: 1;
@@ -83,7 +84,7 @@
 }
 /* login-form */
 .main-form{
-margin: 10vh 0;
+padding: 10vh 0;
 margin-left: 5%;
 }
 form{
@@ -109,40 +110,8 @@ background-color: #C4C4C4 !important;
 
 
 
-/* media query for 1200max */
-@media screen and (max-width: 1200px) {
-  html,
-  body {
-    font-size: 13px;
-    padding: 0;
-    margin: 0;
-  }
-  header {
-    margin-right: 50px;
-  }
-  header > p {
-    margin-left: auto;
-  }
-  nav > ul > li {
-    font-size: 13px;
-  }
-  .hero{
-    margin-bottom: 40%;
-
-  }
-  .hero > img {
-    width: 60%;
-    flex: 1;
-  }
-  .card-flex > img {
-    width: 60%;
-  }
-}
-
-
-
-/* media query for 800max */
-@media screen and (max-width: 800px) {
+/* media query for 1000max */
+@media screen and (max-width: 1000px) {
   html,
   body {
     padding: 0;
@@ -190,35 +159,25 @@ background-color: #C4C4C4 !important;
     cursor: pointer;
     margin-right: 15px;
   }
-  .hero {
-    flex-direction: row-reverse;
-    flex-direction: column-reverse;
-    background-color: #68a1c1;
-    background-image: none;
-  margin-bottom: 70%;
-  }
-  .hero-text > p {
-    max-width: 500px;
-    font-size: medium;
+  .hero{
+    background-image: linear-gradient(to right, #68a1c1 70%, #e5e5e5 50%);
+  margin-bottom: 90vh;
   }
   .hero > img {
-    height: 42vh;
-    width: 100%;
-  }
-  .lap-container {
-    min-height: 150vh;
+    width: 45%;
+    height: 70vh;
   }
   .lap {
-    top: 100vh;
+    top: 80vh;
     flex-direction: column;
     justify-content: space-between;
   }
   .lap > .who-we-are {
     margin-bottom: 30px;
   }
-
   .card-flex > img {
     width: 50%;
+    height: 80vh;
   }
   
   input[type=email], input[type=password], input[type=text], input[type=tel],input[type=url], select {
@@ -237,12 +196,27 @@ background-color: #C4C4C4 !important;
 
 
 
-/* media query for 600max */
-@media screen and (max-width: 600px) {
- .hero{
- margin-bottom: 110%;
+/* media query for 700max */
+@media screen and (max-width: 700px) {
+.hero {
+    flex-direction: column;
+    background-color: #68a1c1;
+    background-image: none;
+  margin-bottom: 98vh;
+  }
+  .hero-text > p {
+    max-width: 500px;
+    font-size: medium;
+  }
+  .hero > img {
+    height: 20vh;
+    height: auto;
+    width: 80%;
+  }
+.lap{
+top: 100vh;
+}
  
- }
  .card-flex {
     flex-direction: column;
     height: auto;
@@ -250,6 +224,13 @@ background-color: #C4C4C4 !important;
   }
   .card-flex > img {
     height: 20vh;
-    width: 100%;
+    width: 90%;
+    margin: 6%;
+  }
+  .card-flex:nth-last-child(2)>img{
+  display: none;
+  }
+  .top-list{
+  display: none;
   }
 }

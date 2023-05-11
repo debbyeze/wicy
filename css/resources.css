@@ -5,9 +5,9 @@ position: relative;
 }
 /* hero */
 .hero {
-  height: 85vh;
+  height: auto;
   justify-content: center;
-  margin-bottom: 50%;
+  margin-bottom: 100vh;
 }
 .hero-text {
 flex: 1;
@@ -18,11 +18,13 @@ flex: 1;
 }
 .hero-text > h3 {
   margin-bottom: 15px;
+    font-size: xx-large;
+
 }
 .hero > img {
 flex: 1;
   display: block;
-  width: 50%;
+  width: 85vh;
 }
 /* lap */
 .lap {
@@ -57,6 +59,7 @@ justify-content: space-between;
   padding: 6%;
   max-width: 500px;
   background-color: #ffffff;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
 }
 /* build-resource */
 .build-resource{
@@ -73,41 +76,8 @@ margin-bottom: 15px;
 
 
 
-/* media query for 1200max */
-@media screen and (max-width: 1200px) {
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  header {
-    margin-right: 50px;
-  }
-  header > p {
-    margin-left: auto;
-  }
-  nav > ul > li {
-    font-size: 13px;
-  }
-  .hero{
-    height: 95vh;
-    margin-bottom: 75%;
-  }
-  .hero > img {
-    width: 60%;
-    height: 70vh;
-    flex: 1;
-    border-radius: 0%;
-  }
-  .lap{
-    top:90vh;
-  }
- 
-  
-}
-
-/* media query for 950max */
-@media screen and (max-width: 950px) {
+/* media query for 1000max */
+@media screen and (max-width: 1000px) {
   html,
   body {
     padding: 0;
@@ -159,12 +129,14 @@ margin-bottom: 15px;
     margin-right: 15px;
   }
   .hero{
-   margin-bottom: 80%;
+   margin-bottom: 110vh;
   }
-  .lap {
-    top: 84vh;
-    
+  .hero>img{
+  width: 50%;
+    flex: 1;
+    height: 70vh;
   }
+  
   .grid-container{
   flex-direction: column;
   }
@@ -179,8 +151,11 @@ margin-bottom: 15px;
 grid-gap:7px;
   
   }
+  .lap{
+    top:80vh;
+  }
+  
   .build-resource{
-margin-top: 5vh;
 padding: 6%;
   }
  
@@ -195,7 +170,7 @@ padding: 6%;
     flex-direction: column-reverse;
     padding-bottom: 8vh;
     height: 120vh;
-    margin-bottom: 205%;
+    margin-bottom: 170vh;
   }
   .hero-text {
     min-width: 200px;
@@ -203,7 +178,7 @@ padding: 6%;
   }
   .hero > img {
     height: 42vh;
-    width: 85vw;
+    width: 90%;
   }
 
   .lap {

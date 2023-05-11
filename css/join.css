@@ -5,7 +5,7 @@ position: relative;
 }
 /* hero */
 .hero {
-height: 65vh;
+height: auto;
 }
 .hero-text {
   padding: 6%;
@@ -15,10 +15,12 @@ height: 65vh;
 .hero-text > h2 {
   margin-bottom: 10px;
   font-weight: normal;
+    font-size: xx-large;
+
 }
 .hero > img {
   display: block;
-  height: 100%;
+  height: 70vh;
 }
 aside>h2{
 margin-top: 3%;
@@ -49,35 +51,8 @@ font-weight: normal;
 }
 
 
-/* media query for 1200max */
-@media screen and (max-width: 1200px) {
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  header {
-    margin-right: 50px;
-  }
-  header > p {
-    margin-left: auto;
-  }
-  nav > ul > li {
-    font-size: 13px;
-  }
-  .hero > img {
-    width: 50%;
-    flex: 1;
-    border-radius: 0%;
-  }
- 
-  
-}
-
-
-
-/* media query for 900max */
-@media screen and (max-width: 900px) {
+/* media query for 1000max */
+@media screen and (max-width: 1000px) {
   html,
   body {
     padding: 0;
@@ -137,28 +112,30 @@ font-weight: normal;
 grid-gap:7px;
   }
   
-  
-
-  
+  .hero > img {
+    width: 50%;
+    flex: 1;
+    border-radius: 0%;
+  }
 }
 
 
 
 
-/* media query for 600max */
-@media screen and (max-width: 600px) {
+
+/* media query for 700max */
+@media screen and (max-width: 700px) {
  .hero {
     flex-direction: row-reverse;
     flex-direction: column-reverse;
     padding-bottom: 8vh;
-    min-height: 95vh;
   }
   .hero-text{
     max-width: 600px;
     font-size: medium;
   }
   .hero > img {
-    height: 40vh;
-    margin: auto;
-  }
+    height: 30vh;
+    width: 100%;  
+}
 }

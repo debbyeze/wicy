@@ -58,7 +58,7 @@
 
       <!-- navlist -->
       <nav id="nav">
-       <div class="close" id="close" style="margin-left:90% ;">
+        <div class="close" id="close" style="margin-left: 90%">
           <img
             src="/images/icons8-close-30.png"
             alt="close"
@@ -88,16 +88,16 @@
         </h3>
         <ul>
           <li class="nav-list">
-            <a href="committees.html" class="black-txt">Our Stories</a>
+            <a href="#our-story" class="black-txt">Our Stories</a>
           </li>
           <li class="nav-list">
-            <a href="committees.html" class="black-txt">Our Team</a>
+            <a href="team.html" class="black-txt">Our Team</a>
           </li>
           <li class="nav-list">
-            <a href="committees.html" class="black-txt">Our committees</a>
+            <a href="#photo" class="black-txt">Our photos</a>
           </li>
           <li class="nav-list">
-            <a href="committees.html" class="black-txt">WiCys Stories</a>
+            <a href="#wicys-story" class="black-txt">WiCys Stories</a>
           </li>
         </ul>
       </aside>
@@ -114,7 +114,7 @@
               currently headed by Dr. Mrs Whyte Tonye Stella.
             </p>
           </div>
-          <img src="/images/Ellipse 8.jpg" alt="" style="border-radius: 50%" width="55%" height="100%"/>
+          <img src="/images/Ellipse 8.jpg" alt="" width="55%" height="100%" />
         </section>
         <!-- lap -->
         <section class="lap jcc">
@@ -172,12 +172,23 @@
               </a>
             </button>
           </div>
+        </section >
+        <!-- wicys youtube -->
+        <section class="youtube" id="wicys-story">
+          <iframe
+            width="596"
+            height="336"
+            src="https://www.youtube.com/embed/mLeFnyGO1Ro?rel=0"
+            title="Join WiCyS! (Women in Cybersecurity)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </section>
         <!-- wicys story -->
-        <section class="wicys-story black-txt swiffy-slider">
-          <h3>WICYS STORIES</h3>
+        <section class="wicys-story black-txt swiffy-slider" id="our-story">
+          <h3 class="purple-txt">WICYS CHAPTER STORIES</h3>
           <div class="card-container slider-container">
-            <!-- <a class="prev" id="prev">❮</a> -->
             <div class="card d-flex" id="whyte">
               <img
                 src="/images/wicys coordinator.jpg"
@@ -187,11 +198,11 @@
                 style="border-radius: 50%"
               />
               <div class="card-text">
-              <div class="story-head">
-                <h3>Stella Tonye Whyte (phD)</h3>
-                <p>WiCys, RSU chapter Coordinator</p>
-              </div>
-                
+                <div class="story-head">
+                  <h3>Stella Tonye Whyte (phD)</h3>
+                  <p>WiCys, RSU chapter Coordinator</p>
+                </div>
+
                 <p>
                   Being a part of the women in Cybersecurity (WiCys) has been
                   amazing and full of fun, knowledge, connectivity and
@@ -210,11 +221,10 @@
                 style="border-radius: 50%; display: block"
               />
               <div class="card-text">
-              <div class="story-head">
-                <h3>Deborah Ezenwankwo</h3>
-                <p>Former Chapter President</p>
-                
-              </div>
+                <div class="story-head">
+                  <h3>Deborah Ezenwankwo</h3>
+                  <p>Former Chapter President</p>
+                </div>
                 <p>
                   WiCys gave me an opportunity which widened my horizon and
                   passion in the tech field. And it's awesome being a field
@@ -222,7 +232,6 @@
                 </p>
               </div>
             </div>
-            <!-- <a class="next" id="next">></a> -->
           </div>
           <button type="button" class="slider-nav"></button>
           <button type="button" class="slider-nav slider-nav-next"></button>
@@ -233,8 +242,8 @@
           </div>
         </section>
         <!-- our photos -->
-        <section class="photo">
-          <h3 class="black-txt">OUR PHOTOS</h3>
+        <section class="photo" id="photo">
+          <h3 class="purple-txt">OUR PHOTOS</h3>
           <div class="gallery d-flex">
             <img
               src="/images//IMG-20221208-WA0041.jpg"
@@ -242,7 +251,7 @@
               class="picSlide"
             />
             <img src="/images/Rectangle 22.png" alt="" class="picSlide" />
-            <img src="/images/Rectangle 20.png" alt="" class="picSlide" />
+            <img src="/images/image_af33a48f-15a4-4c53-9f80-aab3e4e9544e20230506_012912.jpg" alt="" class="picSlide" />
             <img
               src="/images/IMG-20221208-WA0019.jpg"
               alt=""
@@ -267,11 +276,11 @@
         </section>
       </main>
     </section>
-   <!-- footer -->
+    <!-- footer -->
     <footer class="blue-bg white-txt">
-      <div class="footer-container d-flex ">
-        <ul style="flex: 1;">
-        <h4>QUICK LINKS</h4>
+      <div class="footer-container d-flex">
+        <ul style="flex: 1">
+          <h4>QUICK LINKS</h4>
           <li class="nav-list">
             <a href="/index.html">HOME</a>
           </li>
@@ -279,13 +288,17 @@
           <li class="nav-list"><a href="/wicysRsu/join.html">JOIN</a></li>
           <li class="nav-list"><a href="/wicysRsu/about.html">ABOUT US</a></li>
         </ul>
-        <div class="footer-icons" style="flex: 1;">
-        <h4 style="margin-bottom: 10px;">CONNECT WITH US</h4>
+        <div class="footer-icons" style="flex: 1">
+          <h4 style="margin-bottom: 10px">CONNECT WITH US</h4>
           <a href="#"
             ><img src="../images//Vector.png" alt="" width="25px" height="25px"
           /></a>
           <a href="#"
-            ><img src="../images/Vector@2x.png" alt="" width="25px" height="25px"
+            ><img
+              src="../images/Vector@2x.png"
+              alt=""
+              width="25px"
+              height="25px"
           /></a>
           <a href="#"
             ><img
@@ -308,12 +321,17 @@
               width="25px"
               height="25px"
           /></a>
-          <p style="margin-top: 10px;">Computer Science Software lab,Rivers State University</p>
+          <p style="margin-top: 10px">
+            Computer Science Software lab,Rivers State University
+          </p>
           <p>info@wicys.org</p>
         </div>
-        <div class="mission" style="flex: 1;">
-        <h4 style="margin-bottom: 10px;">OUR MISSION</h4>
-        <P>A community where recruiting, retaining and advancing women in cybersecurity HAPPENS</P>
+        <div class="mission" style="flex: 1">
+          <h4 style="margin-bottom: 10px">OUR MISSION</h4>
+          <p>
+            A community where recruiting, retaining and advancing women in
+            cybersecurity HAPPENS
+          </p>
         </div>
       </div>
       <p class="copyright">

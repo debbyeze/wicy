@@ -57,7 +57,7 @@
       </ul>
     </div>
     <div class="main-form">
-     <h4 style="margin-bottom: 2vh;">SIGN UP</h4>
+     <h1 style="margin-bottom: 2vh;" class="purple-txt">SIGN UP</h1>
      <p style="max-width: 700px;">Welcome to the online community.  Because of the built-in security features, you must first register and be approved before accessing many site sections. If you are not a member of the site yet, please register - we'd love you to be part of our online community.  </p>
       <form action="login.php" method="post">
         <div class="container">
@@ -99,12 +99,6 @@
             required
           pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"/>
           <input
-            type="url"
-            placeholder="Social media link"
-            name="social"
-            required
-          pattern="^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$"/>
-          <input
             type="tel"
             placeholder="Phone Number"
             name="phone"
@@ -118,8 +112,10 @@
           minlength="5"  pattern="^\w{1,10}$"/>
         </div>
 
-       
-          <button type="submit" class="green-bg black-txt" style="margin: 0; margin-top: 5vh;padding: 1.5em 5em;">SIGN UP</button>
+       <div class="purple-txt">
+          <span class="sign">Signed up? <a href="/wicysRsu/login.html" class="purple-txt">Login</a></span>
+        </div>
+          <button type="submit" class="green-bg black-txt" style="margin: 0; margin-top: 2vh;padding: 1.5em 5em;">SIGN UP</button>
           
       </form>
     </main>
