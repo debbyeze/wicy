@@ -177,7 +177,7 @@ padding: 6%;
     flex-direction: column-reverse;
     padding-bottom: 8vh;
     height: 120vh;
-    margin-bottom: 170vh;
+    margin-bottom: 190vh;
   }
   .hero-text {
     min-width: 200px;
@@ -189,7 +189,7 @@ padding: 6%;
   }
 
   .lap {
-    top: 100vh;
+    top: 110vh;
     display: grid;
  grid:auto/ auto;
   }
