@@ -84,22 +84,29 @@
 }
 /* login-form */
 .main-form{
-padding: 10vh 0;
-margin-left: 5%;
+padding: 7vh 1vw;
+text-align: center;
+
+}
+.main-form>p:first-of-type{
+max-width: 700px;
+margin: auto;
 }
 form{
-margin-top:7vh;
+margin-top:5vh;
 }
 form>.container{
 display: flex;
 flex-direction: column;
+justify-content: center;
+align-items: center;
 }
-input[type=email], input[type=password], input[type=text], input[type=tel],input[type=url], select {
+input[type=email], input[type=password], input[type=text], input[type=tel],input[type=url], textarea, select {
   width: 35%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-border: 1px solid #000000;
+border: 1px solid #b7d65a;
 border-radius: 5px;  
 box-sizing: border-box;
 }
@@ -108,7 +115,12 @@ background-color: #C4C4C4 !important;
 }
 
 
-
+/* media query for 1000max */
+@media screen and (min-width: 1600px) {
+.hero{
+margin-bottom: 60vh;
+}
+}
 
 /* media query for 1000max */
 @media screen and (max-width: 1000px) {
@@ -180,7 +192,7 @@ background-color: #C4C4C4 !important;
     height: 80vh;
   }
   
-  input[type=email], input[type=password], input[type=text], input[type=tel],input[type=url], select {
+  input[type=email], input[type=password], input[type=text], input[type=tel],input[type=url], textarea, select {
   width: 80%;
   }
   .top-list{
@@ -202,19 +214,17 @@ background-color: #C4C4C4 !important;
     flex-direction: column;
     background-color: #68a1c1;
     background-image: none;
-  margin-bottom: 98vh;
+  margin-bottom: 100vh;
   }
   .hero-text > p {
-    max-width: 500px;
     font-size: medium;
   }
   .hero > img {
-    height: 20vh;
-    height: auto;
+    height: 40vh;
     width: 80%;
   }
 .lap{
-top: 100vh;
+top: 95vh;
 }
  
  .card-flex {

@@ -67,11 +67,17 @@ padding: 6%;
 }
 .build-resource>h3{
 font-weight: normal;
-text-align: center;
 margin-bottom: 15px;
 }
 
 
+
+/* media query for 1600min */
+@media screen and (min-width: 1600px) {
+.hero{
+margin-bottom: 90vh;
+}
+}
 
 
 
@@ -143,10 +149,11 @@ margin-bottom: 15px;
   aside{
   margin-bottom: 2vh;
   text-align: center;
+  display: none;
   }
    aside>ul{
  display: grid;
- font-size: small;
+ font-size: 14px;
  grid:auto/ auto auto auto;
 grid-gap:7px;
   

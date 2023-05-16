@@ -62,6 +62,14 @@ justify-content: space-between;
 
 
 
+/* media query for 1600min */
+@media screen and (min-width: 1600px) {
+.hero{
+margin-bottom: 40vh;
+}
+}
+
+
 
 /* media query for 1000max */
 @media screen and (max-width: 1000px) {

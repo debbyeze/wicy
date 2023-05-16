@@ -107,7 +107,7 @@ font-weight: normal;
   }
    aside>ul{
  display: grid;
- font-size: small;
+ font-size: 14px;
  grid:auto/ auto auto auto;
 grid-gap:7px;
   }

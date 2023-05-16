@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 16px;
+  font-size: 17px;
 }
 p {
-  line-height: 21.11px;
+  line-height: 25px;
 }
 body {
   font-family: "Work Sans";
@@ -99,6 +99,9 @@ list-style: none;
 main{
 flex: 5;
 }
+.lap > div{
+max-width: 700px;
+}
 .purple-bg {
   background-color: #802990;
 }
@@ -157,8 +160,10 @@ display: flex;
   justify-content: space-between;
 }
 button {
-  display: block;
-  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
   border-radius: 5px;
   margin-top: 4vh;
   border: none;
@@ -219,6 +224,9 @@ margin-bottom: 4em;
 .footer-icons img{
 width: 22px;
 height: 22px;
+}
+footer > .copyright {
+font-size: 14px;
 }
 }
 
