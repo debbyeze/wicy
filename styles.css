@@ -237,9 +237,6 @@ top: 95vh;
     width: 90%;
     margin: 6%;
   }
-  .card-flex:nth-last-child(2)>img{
-  display: none;
-  }
   .top-list{
   display: none;
   }
